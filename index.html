@@ -1,89 +1,176 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+        <style>
+            
+            .animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+            
+        body{
+            background-color: lightblue;
+            margin: auto;
+            width: 50%;
+            border: 5px solid blue;
+            padding: 5px;
+             text-align: center;
+            font-size: 30px;
+            font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <300>;
+  font-style: normal;
+            }
+            h2{
+                width:60%;
+                border: 2px solid blue;
+                text-align: center;
+                float: right;
+            }
+            h1{
+              text-align: left;
+                padding:2px;
+            }
+            h3{
+                text-align: center;
+            }
+            /* Dropdown Button */
+            .dropbtn {
+            background-color: blue;
+            color: white;
+            padding: 16px;
+            font-size: 20px;
+            border: none;
+            }
+
+            .dropdown {
+            position: relative;
+            display: inline-block;
+                }
+
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: blue;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+                font-size: 25px
+                }
+
+            .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+                }
+
+            .dropdown-content a:hover {background-color: white;}
+
+            .dropdown:hover .dropdown-content {display: block;}
+
+            .dropdown:hover .dropbtn {background-color: darkblue;}
+            img{
+                float: right
+            }
+            .source{
+                float:right
+            }
+            
+            table, th, td {
+        border:1px solid blue;
+        margin-left: auto;
+        margin-right: auto;
+            }
+            
+            footer {
+  text-align: center;
+    font-size:13px;
+  padding: 3px;
+  background-color: powderblue;
+  color: black;
+}
+            
+        </style>
+        
+        
+       
+        
          <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-        <title>Alden's Web Journal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <title>Coral In Reef tanks</title>
     </head>
-    <body>
-		<h1>Different Types Of Coral In Fish Tanks</h1>
+    <body class="animate-in">
+         <h2>Different Types Of Coral In Fish Tanks</h2>
+		<h1 id="#menu">
+        <div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="pg2.html">Small Polyp Stony</a>
+    <a href="pg3.html">Large Polyp Stony</a>
+    <a href="pg4.html">Soft Coral</a>
+  </div>
+</div>
+          
+        </h1>
         <article>
-            <header>
-                <h2>Overview</h2>
-                <h3><ul>2-8-2024</ul></h3>
-            </header>
+            <h3>Overview</h3>
+            <div  class="source">
+            <img src="images/reef2.jpg" width="400" alt="colorful reef aquarium">
+            <h6>Image by World Wide Corals</h6>
+            </div>
             <section>
-                <p>In coral reefs there is<strong> three main types </strong>of coral. these three types of coral are made up by</p>
-                <ol>
-                    <li> SPS (Small polyp stoney)</li>
-                    <li>LPS (Large polyp stoney)</li>
+                
+                <p>In coral reefs there is<strong> three main types </strong>of coral. these three types of coral consist of...</p>
+       
+                <li>  SPS (Small polyp stoney)</li>
+                    <li> LPS (Large polyp stoney)</li>
                     <li>Soft coral</li>
-                </ol>
-                <p>These three main catagories of coral are what make up the reef tanks kept in people homes, and large aquarium facilities. Some people see coral as a plant, but coral is really a large colony of small organisms. Coral also isnt photosynthetic like some people thing, it actually has a symbyotic relationship with a photosyntheic bacteria that gives it energy in exange for a place to live and protection.</p>
                 
+            
+
+                <p>These three main catagories of coral are what make up the reef tanks kept in people homes, and large aquarium facilities. Some people see coral as a plant, but coral is really a large colony of small organisms. Coral also isnt photosynthetic like some people think, it actually has a symbyotic relationship with a photosyntheic bacteria that gives it energy in exange for a place to live and protection.</p>
+                
+                <table>
+                <tr>
+                    <td>SPS</td>
+                    <td>LPS</td>
+                    <td>Soft Coral</td>
+                    </tr>
+                    <tr>
+                        <td>Hard</td>
+                        <td>Medium</td>
+                        <td>Easiest</td>
+                    </tr>
+                </table>
             </section>
         </article>
-        <article>
-            <header>
-                <h2>SPS</h2>
-            </header>
-            <section>
-                <p><em>Small polyp stony</em> corals are what make up most of what you find in the ocean, their anatomy consists of a hard calcium skeleton and many small feeding and photosynthetic polyps. SPS coral tend to be the hardest to keep due to their need for very stable water perameters and high light/flow. In this catagory there are many different types of SPS coral including</p>
-                <ol>
-                    <li>Anacropora</li>
-                    <li>Montipora</li>
-                    <li>Plate Coral </li>
-                    <li>Birds Nest</li>
-                    <li>Acropora</li>
-                </ol>
-                <p>Within these types of coral there is an unbelivable abundance of any color you can think of. </p>
-                
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxQ7SRgIJ21gQOgB0E4WgK395u7FroMVFTw&s" alt = "Small Polyp Stony Corlas" width="250"
-                >
-                <p>Image by FishOfHex Aquatics</p>
-            </section>
-        </article>
-         <article>
-            <header>
-                <h2>LPS</h2>
-            </header>
-            <section>
-                <p>Just like the SPS coral the <em>LPS</em> coral has a calcium skeleton but they are different in the fact that they have Large polyps that extend out of their skeleton to feed and conduct photosynthesis, LPS are eisier to keep than SPS but still need a stable tank with good flow and lighting, some of these corals include</p>
-                <ol>
-                    <li>Hammer Coral</li>
-                    <li>Duncan Coral</li>
-                    <li>Candycane Coral</li>
-                    <li>Gonipora</li>
-                    <li>Torch coral</li>
-                </ol>
-                <p>The LPS coral still comes in a wide range of different colors, while also being able to move around with the flow of the system.</p>
-                
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY6vbFwgbjXtF8_Ia4GX_of7gSpVliCiB8Mw&s" width="250"
-                >
-                  <p>Image by 123RF</p>
-            </section>
-        </article>
-         <article>
-            <header>
-                <h2>Soft Coral</h2>
-            </header>
-            <section>
-                <p>instead of having a calcium skeleton,<em> soft coral</em> is made up of tissue, that feels like leather. leather comes in every shape size and color, from tall and stalky or wide and short. soft coral is the easiest and fastest growing, needing less light and flow than other LPS and SPS coral. some soft coral types are </p>
-                <ol>
-                    <li>Zoanthids</li>
-                    <li>Leather corals</li>
-                    <li>Gorgonian</li>
-                    <li>Patlythoas</li>
-                    <li>pulsing zenia</li>
-                </ol>
-                <p>certain soft corals like zoanthids and palythoas have a toxin called palytoxin, this toxin is able to kill people if ingested. the corals release this when stressed out.</p>
-                
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjElaebwfb6lKaEkEnEqMfjqcT_mtdsLlprQ&usqp=CAU" width="250"
-                >
-                  <p>Image by Reef to Reef</p>
-            </section>
-        </article>
+        <footer>
+  <p>Author: Alden Smith</p>
+  <p>Created for Webpage Final project 2024</p>
+</footer>
     </body>
 </html>
